@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bombas de infusión</title>
+
+    
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    
+
+    <img  src="imagenes/HAL.png"  class="imag" width="200"/>
+    <header>
+    <h1 id="titulo"> Gestión de bombas de infusión</h1> 
+</header>
+    <h2 class="tit">Información general</h2> 
+    <p>Página que contiene los datos generales sobre las bombas de infusión del departamento de Ingeniería Biomédica.</p>
+    <hr>
+    <br>
+    <section class="tabla">
+    <h3 class="tit">Áreas</h3>
+    <p>Destinos asignados a las bombas de infusión.</p>
+   
+    <br>
+        <!-- lista no ordenada-->
+        
+        <table  >
+
+            <thead>
+            <tr>
+                <th>Área</th>
+                <th>Siglas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Urgencias </td>
+                <td>UR </td>
+            </tr>
+            <tr>
+                <td>Unidad de terapia intensiva </td>
+                <td>UTI </td>
+
+            </tr>
+            <tr>
+                <td>Quirófano </td>
+                <td>QI </td>
+
+            </tr>
+            <tr>
+                <td>Hemodinamia </td>
+                <td>HE </td>
+
+            </tr>
+            <tr>
+                <td>Hemodiálisis </td>
+                <td>HD </td>
+
+            </tr>
+            <tr>
+                <td>Cuneros </td>
+                <td>CU </td>
+
+            </tr>
+            <tr>
+                <td>Tococirugía </td>
+                <td>TC </td>
+
+            </tr>
+            <tr>
+                <td>Urologia y videoendoscopia </td>
+                <td>UD-VE </td>
+
+            </tr>
+            <tr>
+                <td>Terapia Media </td>
+                <td>TM </td>
+
+            </tr>
+            <tr>
+                <td>Primer piso </td>
+                <td>1P </td>
+
+            </tr>
+            <tr>
+                <td>Segundo piso </td>
+                <td>2P </td>
+
+            </tr>
+            <tr>
+                <td>Tercer piso </td>
+                <td>3P </td>
+
+            </tr>
+            <tr>
+                <td>Cuarto piso </td>
+                <td>4P </td>
+
+            </tr>
+            <tr>
+                <td>Quinto piso </td>
+                <td>5P </td>
+
+            </tr>
+            <tr>
+                <td>Otra área </td>
+                <td>O/A </td>
+
+            </tr>
+        </tbody>
+        
+
+
+
+
+
+        </table> 
+    </section>
+
+    
+    <section class="gest">
+    
+    <h3 class="tit">Gestor</h3>
+    <form action="/submit-form" method="POST">
+        <label for="Control">No. de Control:</label>
+        <input type="text" id="Control" name="Control" placeholder="Número de control"/>
+        <br>
+        <label for="Area">Área:</label>
+        <input type="text" id="Area" name="Area" placeholder="Área de destino"/>
+        <br>
+        <br>
+        <label for="Comentario">Comentarios:</label>
+        <br>
+        <textarea cols="40" rows="5" id="Comentario"  name="Comentario" placeholder="Ingrese comentario" name="Comentario"></textarea>
+        <br>
+      
+        <button type="submit">Enviar</button>
+
+    </form>
+
+</section>
+    
+    <!--comentario -->
+<script src="registro.js">
+
+</script>
+</body>
+</html> 
